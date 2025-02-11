@@ -15,9 +15,8 @@ import LayerGroup from 'ol/layer/Group.js';
 import ol_style_FillPattern from 'ol-ext/style/FillPattern';
 import ol_control_LayerSwitcher from 'ol-ext/control/LayerSwitcher';
 //import ol_control_EditBar from "ol-ext/control/EditBar";
-import ol_control_Toggle from "ol-ext/control/Toggle";
-import ol_overlay_Popup from "ol-ext/overlay/popup";
-
+import ol_control_Toggle from 'ol-ext/control/Toggle';
+import ol_overlay_Popup from 'ol-ext/overlay/popup';
 
 const raster = new TileLayer({
   source: new OSM(),
@@ -26,7 +25,7 @@ const raster = new TileLayer({
 });
 
 var settings = {
-  "mappath": "maps/SR-Vienna-2054.geojson",
+  "mapPath": "https://raw.githubusercontent.com/jonovotny/sr-vienna-2054/refs/heads/main/maps/SR-Vienna-2054.geojson",
   "language": "en",
   "showSource": true,
   "showComment": false,
@@ -303,7 +302,7 @@ const securitySource = new VectorSource({
 
 var features;
 
-fetch(settings['mappath'])
+fetch(settings['mapPath'])
     .then((response) => secAreas = response.json())
     .then((json) => secZone = createSecurityZones(json, securityOrder))
     .then((x) => features = new GeoJSON().readFeatures(secZone, {featureProjection: 'EPSG:3857'}))
@@ -413,7 +412,7 @@ const poiSource = new VectorSource({});
 const borderSource = new VectorSource({});
 
 var baseSource = new VectorSource({
-  url: 'settings["mappath"]',
+  url: 'settings["mapPath"]',
   format: new GeoJSON(),
 });
 
@@ -428,7 +427,7 @@ const baseLayer = new VectorLayer({
 
 
 baseLayer.setVisible(true);
-baseSource.setUrl(settings["mappath"]);
+baseSource.setUrl(settings["mapPath"]);
 
 const infrastructureLayer = new VectorLayer({
   source: infraShapeSource,

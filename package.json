@@ -6,11 +6,12 @@
     "start": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
+    "parcel-bundler": "^1.12.5",
     "vite": "^6.0.5"
   },
   "dependencies": {
@@ -22,5 +23,8 @@
     "ol-side-panel": "latest",
     "sass": "^1.56.2"
   },
-  "files": ["./images/", "./maps/"]
+  "files": [
+    "./images/",
+    "./maps/"
+  ]
 }
