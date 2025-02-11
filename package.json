@@ -1,5 +1,6 @@
 {
-  "name": "geojsoneditor",
+  "name": "sr-vienna-2054",
+  "homepage": "https://jonovotny.github.io/sr-vienna-2054/",
   "version": "1.0.0",
   "scripts": {
     "start": "vite",
