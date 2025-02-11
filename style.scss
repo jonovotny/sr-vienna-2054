@@ -1,0 +1,101 @@
+$fa-font-path: "node_modules/@fortawesome/fontawesome-free/WebFonts" !default;
+@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "node_modules/ol/ol.css";
+@import "node_modules/ol-ext/dist/ol-ext.css";
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+#map {
+  height: 100%;
+  width: 100%;
+  right: 0;
+  left: 0;
+}
+
+.ol_bw {
+  //filter: brightness(0.75) grayscale(60%);
+  filter: grayscale(70%) brightness(1.0) invert(100%) hue-rotate(180deg) ;
+}
+
+.area {
+  box-shadow: inset 0 0 10px -10px #ff000055
+}
+
+.ol-popup {
+  max-width:400px;
+  min-width:100px;
+  min-height:1em;
+}
+
+.ol-popup.default > div {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: #222222bb;
+  border: 3px solid #0FFF50;
+  border-radius: 5px;
+}
+
+.ol-popup.default .anchor {
+  color: #0FFF50;
+}
+
+.ol-popup.default .anchor:after {
+  border-color: transparent;
+}
+
+.ol-control.ol-layerswitcher {
+  z-index: 1;
+}
+
+.ol-layerswitcher > button {
+  font-size: 1.5em;
+}
+
+.ol-rotate > button {
+  font-size: 1.5em;
+}
+
+.toggle-lang {
+  position: absolute;
+  right: 0.5em;
+  text-align: left;
+  top: 5.5em;
+}
+
+.toggle-source {
+  position: absolute;
+  right: 0.5em;
+  text-align: left;
+  top: 8em;
+}
+
+.toggle-comment {
+  position: absolute;
+  right: 0.5em;
+  text-align: left;
+  top: 10.5em;
+}
+
+.toggle > button{
+  font-size: 1.5em;
+}
+
+.toggle-lang > button {
+  background: url("images/lang-en.svg");
+  background-size: 160% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+}
+
+.toggle-lang.ol-active > button {
+  background: url("images/lang-de.svg");
+  background-size: 125% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+}

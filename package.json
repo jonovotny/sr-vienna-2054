@@ -1,0 +1,21 @@
+{
+  "name": "geojsoneditor",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.5"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@turf/turf": "^7.2.0",
+    "bootstrap-icons": "^1.11.3",
+    "ol": "latest",
+    "ol-ext": "^4.0.26",
+    "ol-side-panel": "latest",
+    "sass": "^1.56.2"
+  }
+}
