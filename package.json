@@ -21,5 +21,6 @@
     "ol-ext": "^4.0.26",
     "ol-side-panel": "latest",
     "sass": "^1.56.2"
-  }
+  },
+  "files": ["./images/", "./maps/"]
 }
