@@ -7,9 +7,13 @@ Live example:
 [<img src="https://raw.githubusercontent.com/jonovotny/sr-vienna-2054/refs/heads/main/images/vienna2050-promo.jpg" width="500px" align="center">](https://jonovotny.github.io/sr-vienna-2054/)
 
 To run it, install [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm), check out this repository, and run:
-cd <check-out directory>
-npm install
-npm start
+
+> cd <check-out directory>
+
+> npm install
+
+> npm start
+
 This should start a local webserver to view the map at http://localhost:5173.
 
 # Controls
