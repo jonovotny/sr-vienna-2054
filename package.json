@@ -11,7 +11,6 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
-    "parcel-bundler": "^1.12.5",
     "vite": "^6.0.5"
   },
   "dependencies": {
@@ -20,14 +19,10 @@
     "bootstrap-icons": "^1.11.3",
     "ol": "latest",
     "ol-ext": "^4.0.26",
-    "ol-side-panel": "latest",
     "sass": "^1.56.2"
   },
   "files": [
     "./images/",
     "./maps/"
-  ],
-  "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "^4.34.6"
-  }
+  ]
 }
