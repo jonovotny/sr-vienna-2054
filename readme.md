@@ -42,13 +42,16 @@ I decided to add a few data entries to each location in the geojson file. Here a
 > > "details": { -> The detail text for the popup box in german and english
 > > > "de": "Nachdem Opel [...]",\
 > > > "en": "After Opel's [...]"
+> > 
 > > },\
 > > "security": "AA", -> The (optional) security rating of polygon features (generates an extra feature on the security ratings layer)\
 > > "securityDetails": { -> The detail text for the security layer popup box in german and english
 > > > "de": "Zusätzlich zu [...]",\
-> > > "en": "In addition to [...]"\
+> > > "en": "In addition to [...]"
+> > 
 > > },\
 > > "comment": "All your base are belong [...]" -> optional author comment
+>
 > }
 
 # Why not just use Google Maps?
