@@ -36,10 +36,8 @@ I decided to add a few data entries to each location in the geojson file. Here a
 
 > "properties": {
 > 
-> > "name": "EMC Werk Aspern", -> The name of the feature, used as title of the popup box
-> > 
-> > "source": "homebrew", -> Reference to the source material if there is one (e.g. SR2e WP&SI p.123)
-> > 
+> > "name": "EMC Werk Aspern", -> The name of the feature, used as title of the popup box\
+> > "source": "homebrew", -> Reference to the source material if there is one (e.g. SR2e WP&SI p.123)\
 > > "type": "neighborhood", -> The general type of this feature, this defines on which map layer it will be placed
 > > 
 > > "spec": "corp", -> The specific type difining the visual style (e.g. which icon to use in point features)
@@ -56,7 +54,7 @@ I decided to add a few data entries to each location in the geojson file. Here a
 > > 
 > > "securityDetails": { -> The detail text for the security layer popup box in german and english
 > > 
-> > > "de": "Zusätzlich zu [...]",
+> > > "de": "Zusätzlich zu [...]",\
 > > > "en": "In addition to [...]"
 > > 
 > > },
