@@ -54,6 +54,14 @@ I decided to add a few data entries to each location in the geojson file. Here a
 >
 > }
 
+# Editig/Adding map styles
+
+The style of a geojson feature is mainly selected based on it's "type/spec" key pair. Main.js lists the currently used styles on [lines 34-239](https://github.com/jonovotny/sr-vienna-2054/blob/d64a8070702c78c92a92e3d9465e33fff3f21629/main.js#L34-L239). The exception are "district" type features, which use "type/name", e.g. "district/Transdanubien",  as their key (this is to manually enter the [solution of the four color map problem](https://www.kleemans.ch/four-color-theorem-map-solver) for neighboring districts).
+
+Features with "type/spec" pairs that are not defined as styles will use the "type/*" style if it exists, otherwise they will fallback to the "default" type.
+
+If you expect to use a color more than once, e.g. for the feature border and its fill, it makes sense to save it in the "colorLib" variable and use references to it, so that you only have to do one change if you want to swap colors later.
+
 # Why not just use Google Maps?
 
 Doing this in javascript gives me much more control over the visual style (e.g. new visually matching street features) and it also allows me to create certain map features automatically, e.g. non-overlapping security zones.
