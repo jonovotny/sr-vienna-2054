@@ -32,27 +32,24 @@ However, I have made the following changes:
 * There is a small homebrew neighborhood in the Groß-Enzersdorf area, which is part of my campaign :P
 
 # Geojson Properties
-I decided to add a few data entries to each location in the geojson file. Here are the details
-> "properties": {\\
-"name": "EMC Werk Aspern", -> The name of the feature, used as title of the popup box\\
-"source": "homebrew", -> Reference to the source material if there is one (e.g. SR2e WP&SI p.123)\\
-"type": "neighborhood", -> The general type of this feature, this defines on which map layer it will be placed\\
-"spec": "corp", -> The specific type difining the visual style (e.g. which icon to use in point features)\\
-"details": { -> The detail text for the popup box in german and english\\
+I decided to add a few data entries to each location in the geojson file. Here are the details:
 
-> > "de": "Nachdem Opel [...]",\\
-"en": "After Opel's [...]"
-
-> },\\
-"security": "AA", -> The (optional) security rating of polygon features (generates an extra feature on the security ratings layer)\\
-"securityDetails": { -> The detail text for the security layer popup box in german and english
-
-> > "de": "Zusätzlich zu [...]",\\
-"en": "In addition to [...]"\\
-
-> },\\
-"comment": "All your base are belong [...]" -> optional author comment\\
-}
+> "properties": {
+> > "name": "EMC Werk Aspern", -> The name of the feature, used as title of the popup box
+> > "source": "homebrew", -> Reference to the source material if there is one (e.g. SR2e WP&SI p.123)
+> > "type": "neighborhood", -> The general type of this feature, this defines on which map layer it will be placed
+> > "spec": "corp", -> The specific type difining the visual style (e.g. which icon to use in point features)
+> > "details": { -> The detail text for the popup box in german and english
+> > > "de": "Nachdem Opel [...]",
+> > > "en": "After Opel's [...]"
+> > },
+> > "security": "AA", -> The (optional) security rating of polygon features (generates an extra feature on the security ratings layer)
+> > "securityDetails": { -> The detail text for the security layer popup box in german and english
+> > > "de": "Zusätzlich zu [...]",
+> > > "en": "In addition to [...]"
+> > },
+> > "comment": "All your base are belong [...]" -> optional author comment
+> }
 
 # Why not just use Google Maps?
 
