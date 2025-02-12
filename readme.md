@@ -8,10 +8,8 @@ Live example:
 
 To run it, install [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm), check out this repository, and run:
 
-> cd <check-out directory>
-
-> npm install
-
+> cd &lt;check-out directory&gt;\
+> npm install\
 > npm start
 
 This should start a local webserver to view the map at http://localhost:5173.
