@@ -14,6 +14,12 @@ To run it, install [npm](https://docs.npmjs.com/downloading-and-installing-node-
 
 This should start a local webserver to view the map at http://localhost:5173.
 
+If you are happy with the looks you should be able to host a map like the demo on your github account with:
+
+> npm run deploy
+
+You will have to set the repositories page to "Deploy from branch" "gh-pages/root" on the github wepage. See details about this [here](https://medium.com/@aishwaryaparab1/deploying-vite-deploying-vite-app-to-github-pages-166fff40ffd3).
+
 # Controls
 
 Once on the map you can use the layer control to toggle the visibility of the city border, the (condensed) districts, neighborhoods and points of interest within the districts, and finally, the security ratings for each area (which are turned off by default). Clicking on any map feature will create a popup with more information. This text is either paraphrased from the source, or made up by me, the source indicator in the bottom left of the popup should tell you where I got the data from. You can also view my personal comments on specific areas with the toggle button on the right (most of the homebrew areas include a justification there).
@@ -56,7 +62,7 @@ I decided to add a few data entries to each location in the geojson file. Here a
 >
 > }
 
-# Editig/Adding map styles
+# Editing/Adding map styles
 
 The style of a geojson feature is mainly selected based on it's "type/spec" key pair. Main.js lists the currently used styles on [lines 34-239](https://github.com/jonovotny/sr-vienna-2054/blob/d64a8070702c78c92a92e3d9465e33fff3f21629/main.js#L34-L239). The exception are "district" type features, which use "type/name", e.g. "district/Transdanubien",  as their key (this is to manually enter the [solution of the four color map problem](https://www.kleemans.ch/four-color-theorem-map-solver) for neighboring districts).
 
