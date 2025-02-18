@@ -5,6 +5,18 @@ $fa-font-path: "node_modules/@fortawesome/fontawesome-free/WebFonts" !default;
 @import "node_modules/ol/ol.css";
 @import "node_modules/ol-ext/dist/ol-ext.css";
 
+@font-face {
+  font-family: 'sr-icons';
+  src:  url('fonts/sr-icons.eot?f4f9my');
+  src:  url('fonts/sr-icons.eot?f4f9my#iefix') format('embedded-opentype'),
+    url('fonts/sr-icons.ttf?f4f9my') format('truetype'),
+    url('fonts/sr-icons.woff?f4f9my') format('woff'),
+    url('fonts/sr-icons.svg?f4f9my#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 html, body {
   margin: 0;
   height: 100%;
