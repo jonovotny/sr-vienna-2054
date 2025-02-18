@@ -25,8 +25,8 @@ const raster = new TileLayer({
 });
 
 var settings = {
-  //"mapPath": "https://raw.githubusercontent.com/jonovotny/sr-vienna-2054/refs/heads/main/maps/SR-Vienna-2054.geojson",
-  "mapPath": "maps/SR-Vienna-2054.geojson",
+  "mapPath": "https://raw.githubusercontent.com/jonovotny/sr-vienna-2054/refs/heads/main/maps/SR-Vienna-2054.geojson",
+  //"mapPath": "maps/SR-Vienna-2054.geojson",
   "language": "en",
   "showSource": true,
   "showComment": false,
