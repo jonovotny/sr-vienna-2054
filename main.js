@@ -25,7 +25,8 @@ const raster = new TileLayer({
 });
 
 var settings = {
-  "mapPath": "https://raw.githubusercontent.com/jonovotny/sr-vienna-2054/refs/heads/main/maps/SR-Vienna-2054.geojson",
+  //"mapPath": "https://raw.githubusercontent.com/jonovotny/sr-vienna-2054/refs/heads/main/maps/SR-Vienna-2054.geojson",
+  "mapPath": "maps/SR-Vienna-2054.geojson",
   "language": "en",
   "showSource": true,
   "showComment": false,
@@ -39,19 +40,38 @@ var markerSymbols = {
   "shop/magic": "\u{e2ca}",
   "shop/weapons": "\u{e19b}",
   "service/clinic": "\u{f0f8}",
+  "service/court": "\u{f0e3}",
+  "service/education": "\u{f19d}",
   "service/first aid": "\u{f479}",
+  "service/government": "\u{f19c}",
   "service/repair": "\u{f7d9}",
   "service/restaurant": "\u{f2e7}",
   "service/bar": "\u{f57b}",
   "service/black market": "\u{f21b}",
   "service/cafe": "\u{f0f4}",
+  "service/decker": "\u{e4e5}",
   "service/golf": "\u{f450}",
   "service/security": "\u{e4d8}",
   "service/place of power": "\u{e05d}",
+  "service/winebar": "\u{f4e3}",
   "road/blockade": "\u{e562}",
   "road/tunnel entrance": "\u{e4de}",
   "road/checkpoint": "\u{e54a}",
   "road/ferry": "\u{e4ea}",
+  "corp/ares": "\u{e900}",
+  "corp/aztech": "\u{e904}",
+  "corp/evo": "\u{e906}",
+  "corp/horizon": "\u{e909}",
+  "corp/mitsuhama": "\u{e90b}",
+  "corp/neonet": "\u{e90d}",
+  "corp/renraku": "\u{e90e}",
+  "corp/saeder-krupp": "\u{e90f}",
+  "corp/shiawase": "\u{e911}",
+  "corp/spinrad": "\u{e912}",
+  "corp/wuxing": "\u{e914}",
+  "corp/bank": "\u{f81d}",
+  "corp/national": "\u{f1ad}",
+  "corp/media": "\u{f1ea}",
   "default": ""
 };
 
@@ -67,6 +87,7 @@ var colorLib = {
   "security/Z": '#d53e4f',
   "road/highway/inner": '#73545a',
   "road/highway/outer": '#8f8181',
+  "road/runway": '#424247',
   "district/LightBlue": '#a6cee3',
   "district/DarkBlue": '#1f78b4',
   "district/LightGreen": '#b2df8a',
@@ -84,6 +105,7 @@ var colorLib = {
   "gang/Mafia": '#8dd3c7',
   "gang/Seoulpa": '#bebada',
   "gang/Triads": '#ffffb3',
+  "gang/Vory": '#4daf4a',
   "gang/Yakuza": '#fb8072',
   "border/state/2054": '#C19A6B',
   "border/state/2080": '#C19A6B',
@@ -128,6 +150,11 @@ var textStyles = {
     stroke: new Stroke({color: 'black', width: 0.3}),
     placement: 'line',
     font: '10px Tahoma'}),
+  "road/runway": new Text({
+      fill: new Fill({color: 'grey'}),
+      stroke: new Stroke({color: 'black', width: 0.3}),
+      placement: 'line',
+      font: '10px Tahoma'}),
   "road/street": new Text({
     fill: new Fill({color: 'white'}),
     stroke: new Stroke({color: 'black', width: 0.3}),
@@ -147,11 +174,31 @@ var textStyles = {
     fill: new Fill({color: 'white'}),
     stroke: new Stroke({color: 'black', width: 0.3}),
     font: '14px Tahoma'}),
+  "gang/Erich": new Text({
+      fill: new Fill({color: 'black'}),
+      stroke: new Stroke({color: 'white', width: 3}),
+      font: '900 16px "Font Awesome 6 Free"'}),
   "gang/*": new Text({
     fill: new Fill({color: 'white'}),
     stroke: new Stroke({color: 'black', width: 0.3}),
     font: '14px Tahoma'}),
   "border/*": new Text({}),
+  "corp/national": new Text({
+    fill: new Fill({color: 'black'}),
+    stroke: new Stroke({color: 'white', width: 3}),
+    font: '900 16px "Font Awesome 6 Free"'}),
+  "corp/bank": new Text({
+      fill: new Fill({color: 'black'}),
+      stroke: new Stroke({color: 'white', width: 3}),
+      font: '900 16px "Font Awesome 6 Free"'}),
+  "corp/media": new Text({
+      fill: new Fill({color: 'black'}),
+      stroke: new Stroke({color: 'white', width: 3}),
+      font: '900 16px "Font Awesome 6 Free"'}),
+  "corp/*" : new Text({
+    fill: new Fill({color: 'black'}),
+    stroke: new Stroke({color: 'white', width: 3}),
+    font: '20px sr-icons'}),
   "selected": new Text({
     fill: new Fill({color: 'black'}),
     stroke: new Stroke({color: colorLib['selected'], width: 3}),
@@ -182,7 +229,7 @@ var fillStyles = {
   "district/Vorstadt": new Fill({color: colorLib["district/DarkBlue"] + '55'}),
   "district/Vereinigte Wohnparks": new Fill({color: colorLib["district/DarkBlue"] + '55'}),
   "district/Schwechat": new Fill({color: colorLib["district/DarkBlue"] + '55'}),
-  "district/Groß-Enzersdorf": new Fill({color: colorLib["district/DarkGreen"] + '55'}),
+  "district/Transdanubien (Groß-Enzersdorf)": new Fill({color: colorLib["district/LightBlue"] + '55'}),
   "district/Industriezone Laa": new Fill({color: colorLib["district/DarkGreen"] + '55'}),
   "district/Brigittenau": new Fill({color: colorLib["district/DarkGreen"] + '55'}),
   "district/Neo-Ottakring": new Fill({color: colorLib["district/DarkGreen"] + '55'}),
@@ -203,6 +250,7 @@ var fillStyles = {
   "gang/Mafia": new Fill({color: colorLib["gang/Mafia"] + '55'}),
   "gang/Seoulpa": new Fill({color: colorLib["gang/Seoulpa"] + '55'}),
   "gang/Triads": new Fill({color: colorLib["gang/Triads"] + '55'}),
+  "gang/Vory": new Fill({color: colorLib["gang/Vory"] + '55'}),
   "gang/Yakuza": new Fill({color: colorLib["gang/Yakuza"] + '55'}),
   "selected": new Fill({color: colorLib['selected'] + 99}),
   "default": new Fill({color: 'rgba(0,0,0,0)'})
@@ -223,6 +271,7 @@ var strokeStyles = {
   "road/highway tunnel/outer": new Stroke({color: colorLib["road/highway/outer"], width: 8, lineDash: [4, 10]}),
   "road/street/inner": new Stroke({color: 'black', width: 5}),
   "road/street/outer": new Stroke({color: '#cccccc', width: 5.5}),
+  "road/runway": new Stroke({color: colorLib["road/runway"], width: 12, lineCap: 'butt'}),
   "district/*": new Stroke({color: '#cccccc', width: 2}),
   "building/*": new Stroke({color: '#3e3b38', width: 2}),
   "border/state/2054": new Stroke({color: colorLib["border/state/2080"]+'88', width: 6}),
@@ -266,8 +315,15 @@ function createSecurityZones(source, order) {
         feature.properties.spec = secRating;
         for (var area of secAreas.values()) {
           var diff = diffFeature(area, feature);
-          area.type = diff.type;
-          area.geometry = diff.geometry;
+          if (diff) {
+            area.type = diff.type;
+            area.geometry = diff.geometry;
+          } else {
+            var counterDiff = diffFeature(feature, area);
+            if (counterDiff) {
+              feature.geometry = counterDiff.geometry;
+            }
+          }
         }
         newAreas.push(feature);
       }
@@ -518,7 +574,7 @@ const poiLayer = new VectorLayer({
     var spec = feature.get("spec");
     var label = feature.get("name");
 
-    var baseStyle = fetchStyle("default");
+    var baseStyle = fetchStyle(type+"/"+spec);
 
     var symbol = type+"/"+spec;
     if (markerSymbols[type+"/"+spec]) {
@@ -610,8 +666,12 @@ function selectStyle(feature) {
   var selectedStyle = fetchStyle('selected');
   selectedStyle.getText().setText("");
   if (feature.getGeometry().getType() == 'Point') {
-    var marker = markerSymbols[feature.getProperties()["type"] + "/" + feature.getProperties()["spec"]];
+    var type = feature.get("type");
+    var spec = feature.get("spec");
+    var featureStyle = fetchStyle(type+"/"+spec);
+    var marker = markerSymbols[type+"/"+spec];
     if (marker) {
+      selectedStyle.getText().setFont(featureStyle.getText().getFont());
       selectedStyle.getText().setText(marker);
     } 
   }

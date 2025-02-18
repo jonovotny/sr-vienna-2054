@@ -45,7 +45,7 @@
         },
         "security": "AA",
         "securityDetails": {
-          "de": "Zusätzlich zu DanubenWacht patrouillieren hier auch Sicherheitskräfte von EMC die Straßen, zur Verhinderung von Industriespionage und dem gewaltsamen Abwerben von Mitarbeitern.",
+          "de": "Zusätzlich zur DanubenWacht patrouillieren hier auch Sicherheitskräfte von EMC die Straßen, zur Verhinderung von Industriespionage und dem gewaltsamen Abwerben von Mitarbeitern.",
           "en": "In addition to DanubenWacht EMC invests in its own security detail to prevent IP theft and aggressive poaching of their staff."
         },
         "comment": "Completely homebrew, but it is currently the location of a huge car part manufacturing plant and the nearby Seestadt gives off some arcology vibes."
@@ -676,13 +676,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Cosa Nostra (Mafia)",
+        "name": "Sacra Corona Unita (Mafia)",
         "type": "gang",
         "spec": "Mafia",
-        "source": "SR2e WP&SI pg.27, homebrew",
+        "source": "SR2e WP&SI pg.27, SR5e DPÖ p.19, homebrew",
         "details": {
-          "de": "Die Mafia unterhält in Wien nur einen kleineren Standort der auf Hehlerei spezialisiert ist. Sie steht vermutlich mit den Hafenbrüdern in Verbindung.",
-          "en": "The mafia is only running a smaller fencing operation in Vienna. A collaboration with the nearby Hafenbrüder gang seems very likely."
+          "de": "Die Mafia unterhält in Wien nur einen kleineren Standort der auf Hehlerei spezialisiert ist. Sie steht vermutlich mit den Hafenbrüdern in Verbindung, mit den Vory und Strizzis sind sie auf Kriegsfuß.",
+          "en": "The mafia is only running a smaller fencing operation in Vienna. A collaboration with the nearby Hafenbrüder gang seems very likely, while they often bash heads with the Vory and Strizzis."
         },
         "comment": "Mentioned in the source without a specific location. I placed the territory next to transportation lines for smuggling and an incineration facility for mafia tropes."
       },
@@ -701,6 +701,34 @@
             [16.438937486861107, 48.18215659520894],
             [16.43968834834635, 48.18174067068685],
             [16.437077660720632, 48.179591673559685]
+          ]
+        ],
+        "type": "Polygon"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Wiener Organizatsi (Vory)",
+      "type": "gang",
+      "spec": "Vory",
+      "source": "SR2e WP&SI pg.27, SR5e DPÖ p.19, homebrew",
+      "details": {
+        "de": "Die Vory versuchen in den Vororten Fuß zu fassen und sind dabei hauptsächlich der Mafia ein Dorn im Auge.",
+        "en": "The Vory are increasing their presence in the Vorstadt area, which seems to rub the mafia the wrong way."
+      },
+      "comment": "Mentioned in the source without a specific location. I placed the territory around a famous russian-orthodox church."
+},
+      "geometry": {
+        "coordinates": [
+          [
+            [16.383913902068144, 48.19916636766919],
+            [16.383764773756724, 48.197255633941126],
+            [16.385430039897074, 48.19721697674257],
+            [16.38535547574179, 48.19780787644416],
+            [16.38721129472316, 48.197708473233206],
+            [16.387352138127937, 48.19907801161199],
+            [16.38506550402556, 48.19916636766919],
+            [16.383913902068144, 48.19916636766919]
           ]
         ],
         "type": "Polygon"
@@ -1031,7 +1059,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Turm 4",
+        "name": "Turm 6",
         "source": "homebrew",
         "type": "building",
         "spec": "residental"
@@ -1039,13 +1067,13 @@
       "geometry": {
         "coordinates": [
           [
-            [16.56610894292691, 48.17263737934765],
-            [16.56618398197744, 48.17217707928482],
-            [16.56772727640892, 48.17217596994605],
-            [16.56816840341113, 48.17197398332131],
-            [16.5685725867486, 48.17237227656661],
-            [16.56796153388783, 48.17263744515485],
-            [16.56610894292691, 48.17263737934765]
+            [16.378421512113476, 48.11295932108928],
+            [16.380785685903703, 48.11244665170611],
+            [16.381880006945522, 48.11282701491896],
+            [16.38156677880707, 48.11332153905235],
+            [16.380634110672474, 48.11300240106931],
+            [16.378615031268907, 48.11340713611594],
+            [16.378421512113476, 48.11295932108928]
           ]
         ],
         "type": "Polygon"
@@ -1062,13 +1090,11 @@
       "geometry": {
         "coordinates": [
           [
-            [16.56600632204999, 48.17376038652818],
-            [16.56610609796089, 48.17283984788105],
-            [16.56683828201211, 48.17285640991828],
-            [16.5667830672129, 48.17331373484205],
-            [16.56788247922718, 48.17333518947579],
-            [16.56784902937548, 48.17382383890246],
-            [16.56600632204999, 48.17376038652818]
+            [16.382207720468358, 48.11297716504055],
+            [16.382832591799996, 48.113214539218745],
+            [16.381625943711384, 48.11493367099334],
+            [16.381011846023995, 48.11468191888903],
+            [16.382207720468358, 48.11297716504055]
           ]
         ],
         "type": "Polygon"
@@ -1085,13 +1111,11 @@
       "geometry": {
         "coordinates": [
           [
-            [16.57063740065447, 48.17130981218229],
-            [16.57188144451276, 48.17176853959301],
-            [16.57099070252776, 48.17278195628816],
-            [16.57031488855983, 48.1725254933127],
-            [16.57086202052212, 48.17195263892265],
-            [16.5702351873588, 48.17173587170029],
-            [16.57063740065447, 48.17130981218229]
+            [16.374202903242775, 48.11472507647997],
+            [16.376454594764255, 48.11536524315969],
+            [16.37619602731624, 48.115796811701074],
+            [16.373987430370534, 48.11517103613329],
+            [16.374202903242775, 48.11472507647997]
           ]
         ],
         "type": "Polygon"
@@ -1108,13 +1132,13 @@
       "geometry": {
         "coordinates": [
           [
-            [16.5700935124178, 48.17277546668588],
-            [16.57074085249402, 48.17302906939315],
-            [16.57000264666542, 48.17389056699829],
-            [16.56830856651368, 48.1738378414113],
-            [16.56835091680509, 48.17335022869749],
-            [16.56955183356448, 48.1733610116441],
-            [16.5700935124178, 48.17277546668588]
+            [16.377077774558416, 48.113212857254524],
+            [16.37728290209037, 48.113680786863],
+            [16.375385472424256, 48.11409164837153],
+            [16.37506068716621, 48.11462804595257],
+            [16.374334193826115, 48.11442832410313],
+            [16.37477008983018, 48.11372643830407],
+            [16.377077774558416, 48.113212857254524]
           ]
         ],
         "type": "Polygon"
@@ -1131,13 +1155,13 @@
       "geometry": {
         "coordinates": [
           [
-            [16.56859153745126, 48.17181194862129],
-            [16.56897486118606, 48.17165589301133],
-            [16.56961923536724, 48.17093567808772],
-            [16.57029471122187, 48.17117640798624],
-            [16.56948322320835, 48.17199876849349],
-            [16.56897878099509, 48.17220661809176],
-            [16.56859153745126, 48.17181194862129]
+            [16.37661619941869, 48.1158831249746],
+            [16.376885540509846, 48.1154515571578],
+            [16.378167604102373, 48.11581119725673],
+            [16.378712309391176, 48.11571283207053],
+            [16.378899100334053, 48.116094982069626],
+            [16.378005999447964, 48.11624995476825],
+            [16.37661619941869, 48.1158831249746]
           ]
         ],
         "type": "Polygon"
@@ -1146,20 +1170,20 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Groß-Enzersdorf",
+        "name": "Transdanubien (Groß-Enzersdorf)",
         "source": "homebrew",
         "type": "district",
-        "spec": "municipal",
+        "spec": "corp",
         "details": {
-          "de": "Eines der zwei großen Annexionsgebiete von Kaiser Leopold Habsburg. Die Renaturierung der gekippten Ackerböden ist hier immer noch am Gange. Mit Ausnahme von Groß-Enzersdorf selbst ist das Gebiet nur sehr dünn besiedelt.",
-          "en": "One of the two annexations of Emperor Leopold Habsburg. The effort to renaturalize the drained topsoil is still ongoing here. Apart from Groß-Enzersdorf proper, the district is only sparsely inhabited."
+          "de": "Nachdem im Crash 1.0 das gesamte Grundbuch gelöscht wurde, kam es im Anschluss daran zu signifikantem Landraub von allen Seiten. Transdanubien erlangte dabei die Kontrolle über Groß-Enzersdorf und sein Umland, in dem die Renaturierung der gekippten Ackerböden im Gang war. Einzelne kleinere Corps haben sich in dieser relativ billigen Gegend angesiedelt.",
+          "en": "During Crash 1.0 the Austrian land title register and all its backups were erased, which lead to land robbery at significant scales. Transdanubien acquired Groß-Enzersdorf and its surroundings, where the efforts to renaturalize the drained topsoil was still ongoing. The relatively cheap part of Transdanubien is now home to several smaller corps."
         },
-        "security": "D",
+        "security": "B",
         "securityDetails": {
-          "de": "Wegen der geringen Bevölkerungsdichte ist Polizei hier unterbesetzt und greift oft nur nach deutlicher Verzögerung ein (wenn überhaupt). Dasselbe gilt für jegliche medizinische Versorgung, die oft erst aus dem Westen der Stadt anreist.",
-          "en": "Due to the low population density, the police force here is notoriously understaffed and often arrives with a significant delay (if at all). The same is true for any medical services, which often have to travel there from the west of Vienna."
+          "de": "Wegen der geringeren Bevölkerungsdichte ist die DanubenWacht hier nicht so oft auf Streife und greift oft nur nach merkbarer Verzögerung ein. Dasselbe gilt für jegliche medizinische Versorgung, doch die Krankenhäuser im Nordwesten von Transdanubien sind die Fahrzeit wert.",
+          "en": "Due to the low population density, the DanubenWacht is patrolling this part of town less frequentlz and often arrives with a notable delay. The same is true for any medical services, however, the excellent care at Transdanubien's northwestern hospitals is worth the slightly longer ambulance ride."
         },
-        "comment": "Whether this area should be part of Transdanubien is not really clear. According to WP&SI p.23 Transdanubien encompasses the 21. and 22. district, I therefore treat this added area as part of the city of Vienna."
+        "comment": "Whether this area should be part of Transdanubien is not really clear. According to WP&SI p.23 Transdanubien encompasses the 21. and 22. district. Later sources, e.g. Shadows over Europe and Datapuls Österreich, indicate that everything across the danube is Transdanubia, so I chose the Crash 1.0 upheaval as the landgrab era."
       },
       "geometry": {
         "coordinates": [
@@ -1213,7 +1237,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Kaisertürme Mühlleiten",
+        "name": "Kaisertürme Hennersdorf",
         "source": "homebrew",
         "type": "gang",
         "spec": "Anarchists",
@@ -1231,18 +1255,15 @@
       "geometry": {
         "coordinates": [
           [
-            [16.56518223512646, 48.17431429230478],
-            [16.56608982652782, 48.17211335933759],
-            [16.56761928829888, 48.17206255585292],
-            [16.56878566763764, 48.17161117140381],
-            [16.56955469390738, 48.17078644367137],
-            [16.57484574412867, 48.17261610749109],
-            [16.57667205261822, 48.17349491120999],
-            [16.57796075954489, 48.17728850162777],
-            [16.57747008139629, 48.17743874212371],
-            [16.57318976299728, 48.18010640645359],
-            [16.57164710520766, 48.17641772640908],
-            [16.56518223512646, 48.17431429230478]
+            [16.37492144226204, 48.118241217660675],
+            [16.37275982511288, 48.11397624007387],
+            [16.382301753039346, 48.11192423512059],
+            [16.384543175540802, 48.11637572261518],
+            [16.385199763810988, 48.11633413996197],
+            [16.38598716207137, 48.11784085010163],
+            [16.386875082754674, 48.12066841545621],
+            [16.376863450331285, 48.122659181665306],
+            [16.37492144226204, 48.118241217660675]
           ]
         ],
         "type": "Polygon"
@@ -1435,16 +1456,21 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Lobau Tunnel Süd",
+        "name": "Transdanubien Checkpoint (Lobau)",
         "source": "homebrew",
         "type": "road",
-        "spec": "tunnel entrance",
+        "spec": "checkpoint",
+        "details": {
+          "de": "Trotz der Wiedervereinigung mit Wien werden weiter Sicherheits-checks durchgeführt. Die Zufahrtsberechtigung wird vor der Einfahrt in den Tunnel kontrolliert.",
+          "en": "Despite the reunification with the rest of Vienna security checks are performed as usual. Entry permissions are checked before entering the tunnel."
+        },
         "comment": "A very likely infrastructure development to connect Transdanubien to the VIE airport."
       },
       "geometry": {
         "coordinates": [16.49098309416931, 48.15327230888937],
         "type": "Point"
-      }
+      },
+      "id": 37
     },
     {
       "type": "Feature",
@@ -1757,23 +1783,6 @@
           ]
         ],
         "type": "Polygon"
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Transdanubien Checkpoint (Südost)",
-        "source": "homebrew",
-        "type": "road",
-        "spec": "checkpoint",
-        "details": {
-          "de": "Trotz der Wiedervereinigung mit Wien sind der Schutzwall rund um Transdanubien inklusive Sicherheits-checks bestehen geblieben.",
-          "en": "Despite the reunification with the rest of Vienna the barrier surrounding Transdanubien remained intact, and security checks are performed as usual."
-        }
-      },
-      "geometry": {
-        "coordinates": [16.54131152561067, 48.2079390642941],
-        "type": "Point"
       }
     },
     {
@@ -2321,7 +2330,8 @@
       "geometry": {
         "coordinates": [16.37263279629687, 48.18809060080318],
         "type": "Point"
-      }
+      },
+      "id": 64
     },
     {
       "type": "Feature",
@@ -2435,9 +2445,13 @@
       },
       "geometry": {
         "coordinates": [
-          [16.57220806026016, 48.17173492886835],
-          [16.57012007367256, 48.17406728829275],
-          [16.56541865181612, 48.17385499695516]
+          [16.382814574088798, 48.11178338587672],
+          [16.372807131291083, 48.11397974096987],
+          [16.373445980007403, 48.11523809587388],
+          [16.377975365450737, 48.11643771240915],
+          [16.38129781884544, 48.11579037564468],
+          [16.382959016074437, 48.113241691664655],
+          [16.382287744877857, 48.11190165745046]
         ],
         "type": "LineString"
       }
@@ -2701,13 +2715,13 @@
         "type": "neighborhood",
         "spec": "corp",
         "details": {
-          "de": "Als einziger Internationaler Flughafen von Wien ist der VIE eine der Hauptverbindungen zum Rest der Welt. Neben Transdanubien beginnt aber in Kürze der Bau des Executive Airports für Konzernmanager.",
-          "en": "As Vienna's only international airport, VIE is one of the main connections to the rest of the world. Meanwhile, corp managers are currently pushing for the construction of an executive airport closer to Transdanubien."
+          "de": "Als einziger frei zugänglicher Internationaler Flughafen von Wien ist der VIE eine der Hauptverbindungen zum Rest der Welt. Bürger von Transdanubien beginnt bevorzugen den Executive Airport, Transdanubia International.",
+          "en": "As Vienna's only freely-accessible international airport, VIE is one of the main connections to the rest of the world. Citizens of Transdanubien usually prefer to use the executive airport, Transdanubia International."
         },
-        "security": "AAA",
+        "security": "A",
         "securityDetails": {
-          "de": "Da über diesen Flughafen viele Geschäftsreisen laufen wurde von den Konzernen höchste Sicherheit gefordert. Das gesamte Flughafengebiet wird von Drohnen überwacht, die Matrix von Deckern im Auge behalten und es sind ständig zumindest zwei Sicherheitsmagier vor Ort um den Astralraum zu überwachen.",
-          "en": "Due to the high amount of business travel passing through this airport, Transdanubien's cons demand the highest security measures possible. The entire area is under drone survaillance, deckers scour the matrix for anything out of the ordinary, and there are always at least two wage mages on-site to monitor astral space activities."
+          "de": "Der Flughafen ist zwar unterfinanziert, dennoch stellt die Polizei hier ein großes Aufgebot um Terroranschläge zu vermeiden. Das gesamte Flughafengebiet wird von Drohnen überwacht, die Matrix von Deckern im Auge behalten und es ist ständig zumindest einem Sicherheitsmagier vor Ort um den Astralraum zu überwachen.",
+          "en": "Despite being generally underfunded, the airport police shows significant presence to deter terrorist attacks. The entire area is under drone survaillance, deckers scour the matrix for anything out of the ordinary, and there is always at least one wage mages on-site to monitor astral space activities."
         }
       },
       "geometry": {
@@ -2760,8 +2774,8 @@
         "type": "district",
         "spec": "municipal",
         "details": {
-          "de": "Ein an sich dünn besiedeltes Gebiet mit einigen größeren Industriebetrieben. Grund für die Annexion war die Kontrolle über Wiens einzigen Flughafen, VIE.",
-          "en": "A sparsely populated area with only a few larger industrial companies. It was annexed to bring Vienna's only airport, VIE, under the direct control of the city."
+          "de": "Ein an sich dünn besiedeltes Gebiet mit einigen größeren Industriebetrieben. Grund für die Annexion war die Kontrolle über Wiens einzigen frei zugänglichen Flughafen, VIE.",
+          "en": "A sparsely populated area with only a few larger industrial companies. It was annexed to bring Vienna's only public-accessible airport, VIE, under the direct control of the city."
         },
         "security": "D",
         "securityDetails": {
@@ -2847,14 +2861,15 @@
         "type": "neighborhood",
         "spec": "corp",
         "details": {
-          "de": "Quasi ein Vorort von Transdanubien in dem nahezu jeder in Versorgungsbetrieben für die Konzern-Gebiete tätig ist. Vor allem die Nahrungsmittelversorgung wird über den Gewerbepark sichergestellt.",
-          "en": "De-facto a satellite town of Transdanubia, where nearly everyone works a logistics job to keep the corporate territory going. The business park is crucial in providing food to their corporate overlords."
+          "de": "Vor der Annexion war das Dorf quasi ein Vorort von Transdanubien in dem nahezu jeder in Versorgungsbetrieben für die Konzern-Gebiete tätig ist. Heute hat dort Aztechnology das sagen und stellt die Nahrungsmittelversorgung über den Gewerbepark sicher.",
+          "en": "Prior to its annexation, this was de-facto a satellite town of Transdanubia, where nearly everyone worked a logistics job to keep the corporate territory going. Now the business park is mostlz run bz Aztechnology and plazs a crucial part in providing food to the corporate territory."
         },
-        "security": "B",
+        "security": "A",
         "securityDetails": {
-          "de": "Dank seiner Bedeutung für Transdanubien hat das Grätzl eine ausreichend besetzte Polizeistation und in Notfällen greift hier auch die DanubenWacht ein.",
-          "en": "Thanks to its importance to Transdanubien, this neighborhood has a decently staffed police station, which can count on backup from the nearby DanubenWacht in urgent situations."
-        }
+          "de": "Wegen der hier angesiedelten Aztechnology Unterbetriebe steht die Gegend unter dem vollen Schutz der DanubenWacht.",
+          "en": "Thanks to significant Aztechnology presence in this town the DanubenWacht provides its full security service here."
+        },
+		"comment": "In the 2080s Aztech is a big player in Austria's food supply market, so I suggest this as a starting point."
       },
       "geometry": {
         "coordinates": [
@@ -2887,8 +2902,8 @@
         "type": "neighborhood",
         "spec": "corp",
         "details": {
-          "de": "Benannt nach den mehrstöckigen Beton-fundament, das seit Baubeginn 1995 auf eine Fläche von über 8 Quadratkilometern angewachsen ist. Nahezu alle AAA Konzerne haben ihre Österreich Hauptquartiere auf der Platte, zum Teil in Form von Arkologien. Auch größere AA corps sind hier zu finden.",
-          "en": "This area is named after its flat multi-floor concrete foundation, which now covers an area of over 8 square kilometers (~2000 acres). It is home to nearly all AAA corp headquarters in Austria, some of which have their own arcologies here. Larger AA corps can also be found here."
+          "de": "Benannt nach den mehrstöckigen Beton-fundament, das seit Baubeginn 1995 auf eine Fläche von über 8 Quadratkilometern angewachsen ist. Nahezu alle AAA Konzerne haben ihre Österreich Hauptquartiere auf der Platte, zum Teil in Form von Arkologien. Auch größere AA corps sind hier zu finden.<br/>Eine Besonderheit der Gegend ist, dass es oberirdisch keinen Individualverkehr gibt. Man geht zu Fuß, oder man nimmt die Cable-Liner Stadtseilbahn. Güter werden in Unteridischen Tunneln transportiert.",
+          "en": "This area is named after its flat multi-floor concrete foundation, which now covers an area of over 8 square kilometers (~2000 acres). It is home to nearly all AAA corp headquarters in Austria, some of which have their own arcologies here. Larger AA corps can also be found here.<br/>One thing to note is that private transport is prohibited on the Platte. You either walk, or you take the Cable-Liner, a public transport cable car. Goods are transported through underground tunnels."
         },
         "security": "AAA",
         "securityDetails": {
@@ -3406,8 +3421,10 @@
         "source": "homebrew",
         "type": "gang",
         "spec": "Hafenbrüder",
-        "details": { "de": "Für die Hafenbrüder ist der Neo-anarchismus nur ein Lippenbekenntnis, das ihnen die Kontrolle über den Hafen Freudenau eingebracht hat. Sie sind eine knallharte Schmugglerbande die mit schwerst illegalem Material handelt.", 
-        "en": "For the Hafenbrüder (engl. Port brotherhood) gang neo-anarchism was just a label that they used to gain control over the Freudenau river port. They are tough as nails smugglers dealing with highly illegal materials." },
+        "details": {
+          "de": "Für die Hafenbrüder ist der Neo-anarchismus nur ein Lippenbekenntnis, das ihnen die Kontrolle über den Hafen Freudenau eingebracht hat. Sie sind eine knallharte Schmugglerbande die mit schwerst illegalem Material handelt.",
+          "en": "For the Hafenbrüder (engl. Port brotherhood) gang neo-anarchism was just a label that they used to gain control over the Freudenau river port. They are tough as nails smugglers dealing with highly illegal materials."
+        },
         "comment": "A homebrew gang territory."
       },
       "geometry": {
@@ -3451,7 +3468,6 @@
           "de": "Für Sicherheit wird hier nicht von der Polizei, sondern von einer kleinen Gruppe waffen-fanatischer Anarchisten gesorgt. Solange man nicht aufmuckt ist man hier überraschend sicher. Auf der Donauinsel herrscht für Gäste Waffenverbot",
           "en": "Here order is not maintained by the police, but rather by a group of neo-anarchist gun fanatics. As long as you do not cause a ruckus it is a surprisingly safe area. On the Danube Island itself, guns are strictly prohibited (for guests)."
         },
-
         "comment": "The security details are partly made up."
       },
       "geometry": {
@@ -4483,6 +4499,486 @@
         "source": "SR5e DPÖ pg.27",
         "type": "border",
         "spec": "state/2054"
+      },
+      "id": 93
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Heuriger \"Rote Reblaus\"" ,
+      "source": "SR5e DPÖ pg.31",
+      "type": "service",
+      "spec": "winebar",
+      "details": {
+        "de": "Ein Heuriger im Herzen von Grinzing in dem auch oft Politik-Größen und Topmanager einkehren.",
+        "en": "A wine tavern at the very heart of Grinzing, known to be a meeting spot of top-politicians and corp managers."
+      },
+      "comment": "Mentioned in a 2080s source, but in Vienna these wine taverns usually have a long history."},
+      "geometry": {
+        "coordinates": [16.340089591131658, 48.25692765579768],
+        "type": "Point"
+      },
+      "id": 94
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Heuriger \"Reischütz\"",
+      "source": "SR5e DPÖ pg.31",
+      "type": "service",
+      "spec": "winebar",
+      "details": {
+        "de": "Dieser Heurige liegt ein paar Schritte Abseits des gedrängten Grinzinger Ortskerns. Doch der Spaziergang wird mit einer guten Aussicht, einer metamenschen-freundlicher Atmosphäre und diskreten Sitzecken für Treffen mit Dr. Nowak belohnt.",
+        "en": "A small walk away from the crowded center of Grinzing, this wine tavern offers a great view over the city, a metahuman-friendly atmosphere and most importantly discrete booths to meet Dr. Nowaks."
+      },
+      "comment": "Mentioned in a 2080s source, but in Vienna these wine taverns usually have a long history." },
+      "geometry": {
+        "coordinates": [16.331441893916804, 48.259901897631636],
+        "type": "Point"
+      },
+      "id": 95
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Heuriger \"Erlmayerhof\"",
+      "source": "SR5e DPÖ pg.32",
+      "type": "service",
+      "spec": "winebar",
+      "details": {
+        "de": "Ein Top Heuriger außerhalb von Grinzing. Den Eigentümern werden enge Verbindungen zu den Strizzis nachgesagt.",
+        "en": "An excellent wine tavern outside of the Grinzing area. It is said that the owners have strong ties to the Strizzis."
+      },
+    "comment": "Mentioned in a 2080s source, but in Vienna these wine taverns usually have a long history." },
+      "geometry": {
+        "coordinates": [16.358733849237296, 48.25508687549734],
+        "type": "Point"
+      },
+      "id": 96
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "UN Österreich",
+      "source": "SR3e LA pg.58",
+      "type": "service",
+      "spec": "government",
+      "details": {
+        "de": "Die Vereinten Nationen haben über die Jahre Mitglieder und Einfluß verloren, doch der Konzerngerichtshof hat die Organisation bisher finanziell über Wasser gehalten. Das bekannte UNO City wurde intern modernisiert und wird mit der WTO geteilt.",
+        "en": "Over the years the United Nations have lost member states and influence. It is only thanks to the corporate court that the organization continues to operate. The iconic UNO City had its interior modernized and now also houses the WTO offices."
+      }
+     },
+      "geometry": {
+        "coordinates": [16.418410042425336, 48.23479646216765],
+        "type": "Point"
+      },
+      "id": 97
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "MediaSim (Kronenzeitung)",
+      "source": "WP&SI pg.58",
+      "type": "corp",
+      "spec": "media",
+      "details": {
+        "de": "Das Redaktionsgebäude der Kronenzeitung, immernoch eine der reichweiten-stärksten Zeitungen Österreichs. Sie ist Teil des MediaSim Konzerns von Hans Dechant.",
+        "en": "The editoral office of the Kronenzeitung, which remains one of the most influential newspapers of Austria. As part of the MediaSim corp, it is controlled by Hans Dechant."
+      } },
+      "geometry": {
+        "coordinates": [16.367000798156738, 48.24555910651401],
+        "type": "Point"
+      },
+      "id": 98
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Adler TV AG",
+      "source": "WP&SI pg.58",
+      "type": "corp",
+      "spec": "media",
+      "details": {
+        "de": "Das Studio von Adler TV. Der Direktor, Kurt Adler, sieht sich gern als Haupt-Konkurrent des MediaSim Imperiums aber seine Reichweite ist deutlich geringer.",
+        "en": "The studio of Adler TV. The CEO, Kurt Adler, likes to view himself as the main rival to the MediaSim empire, but the reach of his publications is lower than he wants to admit."
+      } },
+      "geometry": {
+        "coordinates": [16.40429860816579, 48.189206529948564],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Metalab E.V.",
+	  "source": "SR5e DPÖ p.33",
+	  "type": "service",
+	  "spec": "decker",
+	  "details": {
+		"de": "Ein offizieller Hacker-Verein mit langer Geschichte in Wien bei dem man Vieles über Hard- und Software lernen kann. Auch wenn man dort offiziell illegale Tätigkeiten und Handel ablehnt kann man durchaus an dir richtigen Leute weitervermittelt werden.",
+		"en": "An official hacker-club with along history in Vienna. It focuses on teaching and training software and hardware skills. Even though the club rejects illegal uses of computer soft- and hardware, one might find contacts to less virtuous people there."
+	  } },
+      "geometry": {
+        "coordinates": [16.401301364739282, 48.1901993022835],
+        "type": "Point"
+      },
+      "id": 99
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "WTO Austria/IAEA" ,
+      "source": "SR5e DPÖ p.30",
+      "type": "service",
+      "spec": "government",
+      "details": {
+        "de": "Nach Sparmaßnahmen und Reorganisationen innerhalb der UN war in der UNO City genügend Platz um die Büros der World Trade Organization (WTO) und der Internationalen AtomenergießOrganisation (IAEA) in einem Trakt unterzubringen.",
+        "en": "After budget cuts and internal reorganization at the UN, there was more than enough space to move the offices of the world trade organization (WTO) and the international atomic energy agency into one wing of the Uno City."
+      }},
+      "geometry": {
+        "coordinates": [16.4159968156481, 48.233927910646855],
+        "type": "Point"
+      },
+      "id": 100
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Parlament",
+	  "source": "SR2e WP&SI p.14, SR5e DPÖ p.30",
+	  "type": "service",
+	  "spec": "government",
+	  "details": {
+		"de": "Die Abspaltung von Transdanubien brachte die damalige Bundesregierung unter Zugzwang. Nachdem die Konzerne nun das sagen hatten, wurden das Parlament und andere Regierungsgebäude im Jahr 2008 auf die Platte verlegt um näher an den Hebeln der Macht zu sein.",
+		"en": "With the separation of Transdanubien the then government was left with little choice. Power had slipped into the grasp of megacorps, but to at least keep close to it, the parliament and other federal government buildings were moved to the Platte."
+	  } },
+      "geometry": {
+        "coordinates": [16.414435065725854, 48.235318824543924],
+        "type": "Point"
+      },
+      "id": 101
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Stowasser Design AG",
+	  "source": "SR2e WP&SI p.36",
+	  "type": "corp",
+	  "spec": "national",
+	  "details": {
+		"de": "Einer der größten Software Entwicklungsbetriebe des Landes, der sich auch Matrix Design und neurale Interfaces spezialisiert hat. Einer der Hauptkunden ist die Innere Stadt Kon.",
+		"en": "One of Austria's largest software developers, whose products focus on matrix design and neural interfaces. One of their main customers is the Innere Stadt Con."
+	  } },
+      "geometry": {
+        "coordinates": [16.423635703081885, 48.2276803063514],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Ares Hauptquartier",
+	  "source": "SR2e WP&SI p.35",
+	  "type": "corp",
+	  "spec": "ares",
+	  "details": {
+		"de": "Nachdem Ares als Teil des Konzernrats Transdanubien regiert hat es ein imposantes Hauptquartier auf der Platte gebaut. Von hier wird Verkauf und Marketing in Österreich geregelt. Abgesehen von vereinzelten Knight Errant Stationen ist Ares in hierzulande kaum wirtschaftlich verankert.",
+		"en": "As part of the Corporate-Senate that controls Transdanubien, Ares is showed its presence bz building an imposing headquarter along the coast of the Danube. It handles marketing and sales of the Austria branch. However, apart from a few Knight Errant stations across the country, Ares has few economic ties to Austria."
+	  },
+	"comment": "There aren't any hard details about Ares activity in Austria, apart from KE being active in Vienna according to DPÖ. I just placed it on the map because that building is names Ares Tower."},
+      "geometry": {
+        "coordinates": [16.411435130851658, 48.233438832165064],
+        "type": "Point"
+      },
+      "id": 102
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Aztech Arkologie",
+      "source": "SR2e WP&SI p.35, SR5e DPÖ p.22",
+      "type": "corp",
+      "spec": "aztech",
+      "details": {
+      "de": "Das Hauptquartier des Konzerns liegt zwar auf der Platte, doch Aztechnology hat mit seiner Arkologie in Groß-Enzersdorf sehr direkten Einfluß auf dne Lebensmittelhandel genommen.",
+      "en": "While the corp headquarters are located on the Platte, Aztechnology has built a smaller arcology in Groß-Enzersdorf to have direct hand in the food production and trade."
+      },"comment": "DPÖ mentions that Aztechnology deals in those fields so an arcology here makes sense."
+ },
+      "geometry": {
+        "coordinates": [16.552366305023384, 48.203676266563974],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "S-K Siemens City",
+      "source": "SR2e WP&SI p.35, SR5e DPÖ p.22",
+      "type": "corp",
+      "spec": "saeder-krupp",
+      "details": {
+      "de": "Neben dem Saeder-Krupp Gebäude auf der Platte, hat der Konzern auch einen großen Standort bei den ehemaligen Siemens Fertigungswerkung aufgebaut. Das Hauptquartier in Österreich ist jedoch weiterhin in Linz.",
+      "en": "Apart from its office tower on the Platte, Saeder-Krupp has also expanded the former Siemens Manufacturing plant. Yet, the headquarters of S-K Austria remain in Linz."
+      },"comment": "DPÖ mentions that Siemens is part of SK."
+ },
+      "geometry": {
+        "coordinates": [16.422805167599392, 48.26658489662785],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Konzerngerichtshof",
+      "source": "SR5e DPÖ p.35",
+      "type": "service",
+      "spec": "court",
+      "details": {
+      "de": "Vom dritten Trakt des Vienna International Center aus dirigiert der Konzerngerichtshof die Geschehnisse in Österreich.",
+      "en": "From the third wing of the Vienna International Center the corporate court guides the affairs happening in Austria."
+      },
+    "comment": "There aren't any hard details about Ares activity in Austria, apart from KE being active in Vienna according to DPÖ. I just placed it on the map because that building is names Ares Tower."
+  },
+      "geometry": {
+        "coordinates": [16.41610690202475, 48.23576472375183],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Mautner Markhof AG",
+	  "source": "SR5e WP&SI p.35",
+	  "type": "corp",
+	  "spec": "national",
+	  "details": {
+		"de": "Ein nationaler Konzern im Bereich Nahrungsmittelproduktion, der Hauptsächlich in Familienbesitz der Mautner-Markhofs ist. Die Firma ist mit Mautner Vergnügungstech auch in den Sportgerätehandel eingestiegen.",
+		"en": "A national corp known for its know-how in food and condiment production. It is primarily owned by the Mautner-Markhof family. With it's Mautner Entertainment Tech branch it has entered the market for sports equipment."
+	  } },
+      "geometry": {
+        "coordinates": [16.34264398184399, 48.24792368787308],
+        "type": "Point"
+      },
+      "id": 103
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Flughafen Transdanubia International",
+	  "source": "SR5e DPÖ p.30",
+	  "type": "neighborhood",
+	  "spec": "corp",
+	  "details": {
+		"de": "Nachdem sich eine extrateritorriale Zone wie Transdanubien nicht von der Infrastruktur des Umlandes abhängig machen will, wurde sehr früh mit dem Bau des Executive Airport Transdanubia International begonnen. Mit der Annexion von Groß-Enzersdorf können Konzernbürger nun sub-orbital verreisen ohne einen Schritt auf österreichischen Boden zu setzen.",
+		"en": "Since an extraterritorial zone like Transdanubia would rarely want to be dependent on the transportation infrastructure of its host country, the executive airport was one of the earliest construction projects. After the annexation of Groß-Enzersdorf corp citizens can finally go on a subßorbital trip without having to set foot on austrian soil."
+	  },
+	  "security": "AAA",
+	  "securityDetails": {
+		"de": "Da über diesen Flughafen viele Geschäftsreisen laufen wurde von den Konzernen höchste Sicherheit gefordert. Das gesamte Flughafengebiet wird von Dronen überwacht, die Matrix von Deckern im Auge behalten und es sind ständig zumindest zwei Sicherheitsmagier vor Ort um den Astralraum zu überwachen.",
+		"en": "Due to the high amount of business flights over this airport, Transdanubien's cons demand the highest security measures possible. The entire area is under drone survaillance, deckers scour the matrix for anything out of the ordinary, and there are always at least two wage mages on-site to monitor astral space activities."
+	  },
+	"comment": "This is not mentioned in WP&SI, but I was convinced by one of the DPÖ contributers that the airport was retconned in as reasonable development during that time."},
+      "geometry": {
+        "coordinates": [
+          [
+            [16.654711951007783, 48.18602082509963],
+            [16.67077182933329, 48.19571287899956],
+            [16.67144803473593, 48.199769473573696],
+            [16.66333356989759, 48.207205729403285],
+            [16.64000448348864, 48.24448339630362],
+            [16.621408834901587, 48.24268207917805],
+            [16.607715675488663, 48.243244997594104],
+            [16.596896389037482, 48.24470855648377],
+            [16.585398358040095, 48.23548670337178],
+            [16.580463130520883, 48.232048241667286],
+            [16.577967153383867, 48.22796713012684],
+            [16.573882827160304, 48.224339202191885],
+            [16.56832360535526, 48.21950156491323],
+            [16.584135043653674, 48.21566621812866],
+            [16.583923326992817, 48.21532361144324],
+            [16.594357933860522, 48.21256252094656],
+            [16.596414609996316, 48.21292530045662],
+            [16.598713248031146, 48.21294545479856],
+            [16.600225509895836, 48.21262298437637],
+            [16.611590252788545, 48.209816630995135],
+            [16.624041002445324, 48.20769867345828],
+            [16.626284380761575, 48.20739966063252],
+            [16.62856514871757, 48.20595440736437],
+            [16.629387720767085, 48.20500749517956],
+            [16.630023344623055, 48.204708466641875],
+            [16.63425482618746, 48.19712004714668],
+            [16.63930313986262, 48.19074610443849],
+            [16.64913230688697, 48.18994373378817],
+            [16.65103530037547, 48.188256452469346],
+            [16.654711951007783, 48.18602082509963]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": 104
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "VTI Runway 29",
+      "source": "SR5e DPÖ p.30",
+      "type": "road",
+      "spec": "runway",
+      "comment": "Just a visual property of the VTI airport"
+    },
+      "geometry": {
+        "coordinates": [
+          [16.599151961851078, 48.22500303842551],
+          [16.641349320808445, 48.211374350663846]
+        ],
+        "type": "LineString"
+      },
+      "id": 108
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Runway 34",
+      "source": "SR5e DPÖ p.30",
+      "type": "road",
+      "spec": "runway",
+      "comment": "Just a visual property of the VTI airport"},
+      "geometry": {
+        "coordinates": [
+          [16.63856707556056, 48.229211754952644],
+          [16.651415074386165, 48.19823929343059]
+        ],
+        "type": "LineString"
+      },
+      "id": 109
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Runway 06",
+      "source": "SR5e DPÖ p.30",
+      "type": "road",
+      "spec": "runway",
+      "comment": "Just a visual property of the VTI airport"},
+      "geometry": {
+        "coordinates": [
+          [16.58477823519837, 48.221198424607394],
+          [16.611057853947955, 48.23461123148468]
+        ],
+        "type": "LineString"
+      },
+      "id": 110
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "OMV Ölhafen Lobau" ,
+	  "source": "SR5e DPÖ p.30",
+	  "type": "neighborhood",
+	  "spec": "corp",
+	  "details": {
+		"de": "Mit der Abspaltung von Transdanubien kam dem Ölhafen Lobau als einzigem Hafen an der Ostseite von Wien neue Bedeutung zu und er wurde von der OMV modernisiert.",
+		"en": "After the Transdanubien split from the rest of Vienna, the oil port Lobau regained importance as the only Danube port on the eastern side of the river. It was subsequently modernised by OMV."
+	  },
+	  "comment": "This is not mentioned in WP&SI, but I was convinced by one of the DPÖ contributers that the port was retconned in as reasonable development during that time."},
+      "geometry": {
+        "coordinates": [
+          [
+            [16.49196219648246, 48.177174532757135],
+            [16.50543497488033, 48.168848816468056],
+            [16.514096390537816, 48.16398354337824],
+            [16.52690303719558, 48.15725076319467],
+            [16.5222549186374, 48.16399375865993],
+            [16.52127511383904, 48.16440819706497],
+            [16.511978870983796, 48.169277989823],
+            [16.511715995384748, 48.16989160676587],
+            [16.51279139556553, 48.174720595526594],
+            [16.512946747861918, 48.176258455900324],
+            [16.502955150829138, 48.18233745037881],
+            [16.498713294561213, 48.18139732757632],
+            [16.495785841568562, 48.17940548830427],
+            [16.49524814147884, 48.179365650663556],
+            [16.4923445609908, 48.17731795424828],
+            [16.49196219648246, 48.177174532757135]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": 105
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Nihon Restaurant",
+	  "source": "SR5e DPÖ p.32",
+	  "type": "service",
+	  "spec": "restaurant",
+	  "details": {
+		"de": "Ein excellentes japanisches Restaurant an der Nordgrenze des SGHWS das oft von den Yakuza besucht wird.",
+		"en": "An excellent japanese restaurant at the northern end of the SGHWS zone that often welcomes the Yakuza as customers. "
+	  },
+	  "comment": "This is not mentioned in WP&SI, but it is found in DPÖ and probably existed in the 2050s." },
+      "geometry": {
+        "coordinates": [16.374642500785455, 48.18234934644124],
+        "type": "Point"
+      },
+      "id": 106
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Babylon Club",
+	  "source": "SR5e DPÖ p.32",
+	  "type": "service",
+	  "spec": "bar",
+	  "details": {
+		"de": "Ein mehr oder weniger unabhängiger Strip Club abseits der üblichen Strizzi Hochburgen. Die abhörsicheren Separees eignen sich auch gut für Planungstreffen von Runnern.",
+		"en": "A more or less independent strip club outside of the usual Strizzi areas. Its tap-proofed separate \"meeting rooms\" make ideal places to plan runs."
+	  },
+	  "comment": "This is not mentioned in WP&SI, but it is found in DPÖ and probably existed in the 2050s." },
+      "geometry": {
+        "coordinates": [16.355885544651727, 48.19929482546925],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Transdanubien Checkpoint (Ost)",
+        "source": "homebrew",
+        "type": "road",
+        "spec": "checkpoint",
+        "details": {
+          "de": "Trotz der Wiedervereinigung mit Wien sind der Schutzwall rund um Transdanubien inklusive Sicherheits-checks bestehen geblieben.",
+          "en": "Despite the reunification with the rest of Vienna the barrier surrounding Transdanubien remained intact, and security checks are performed as usual."
+        }},
+      "geometry": {
+        "coordinates": [16.62758820091031, 48.167308906144285],
+        "type": "Point"
+      },
+      "id": 107
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Transdanubien Checkpoint (Flughafen VTI)",
+        "source": "homebrew",
+        "type": "road",
+        "spec": "checkpoint",
+        "details": {
+          "de": "Trotz der Wiedervereinigung mit Wien sind der Schutzwall rund um Transdanubien inklusive Sicherheits-checks bestehen geblieben.",
+          "en": "Despite the reunification with the rest of Vienna the barrier surrounding Transdanubien remained intact, and security checks are performed as usual."
+        } },
+      "geometry": {
+        "coordinates": [16.597162806601972, 48.2448692319237],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Raucherklub \"Maria Theresia\"",
+        "source": "SR5e DPÖ p.32",
+        "type": "service",
+        "spec": "bar",
+        "details": {
+          "de": "Ein diskreter Raucherklub an der Grenze zur hochgeschützten Platte. Die Separees erlauben es den Managern hier private Deals auszuhandeln.",
+          "en": "A very discreet smoking club right at the border to the high-security areas of the Platte. Individual booths allow managers to negotiate deals in absolute privacy."
+        } },
+      "geometry": {
+        "coordinates": [16.437381438753903, 48.23579412894489],
+        "type": "Point"
+      },
+      "id": 109
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Dr.-Singer-Institut",
+      "source": "SR5e DPÖ p.32",
+      "type": "service",
+      "spec": "education",
+      "details": {
+        "de": "Auch bekannt als David Singer Schule. Hier werden die magischen Theorien des namensgebenden Doktors, die stark auf Psychoanalyse und Gedankenmanipulation basieren, gelehrt.",
+        "en": "Also known as David Singer School. The main curriculum are the Theories of Dr. Singer, which promote a access to magic, which is heavily based on psychoanalysis and mental manipulation."
+      }},
+      "geometry": {
+        "coordinates": [16.431050506098273, 48.24061090159836],
+        "type": "Point"
       }
     }
   ]
